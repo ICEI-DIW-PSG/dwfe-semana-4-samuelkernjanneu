@@ -22,5 +22,5 @@ Nessa atividade, você deverá montar a página inicial do projeto escolhido, a 
 
 
 ## Print da home-page criada
-![inovatechhomepage](public/imagens/inovatech%20home-page.png)
+![techkernhomepage](public/imagens/homepagetechkern.png)
 
