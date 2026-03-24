@@ -1,3 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
 body {
-    background-color: aquamarine;
+    font-family: Arial, sans-serif;
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1a1a1a;
+    color: white;
+    padding: 20px;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+}
+
+.menu li {
+    margin-left: 20px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+
+/* HERO */
+.hero {
+    background: url("imagens/inova\ tech.png") no-repeat center;
+    background-size: cover;
+    height: 400px;
+
+}
+
+.hero-content {
+    background: rgba(0,0,0,0.6);
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+/* SECTIONS */
+section {
+    padding: 40px;
+    text-align: center;
+}
+
+/* BOTÃO */
+.btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #1a1a1a;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #333;
+}
+
+/* CARDS */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.card {
+    border: 1px solid #ccc;
+    padding: 15px;
+    width: 220px;
+    position: relative;
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+/* FORM */
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form input {
+    margin: 10px;
+    padding: 10px;
+    width: 250px;
+}
+
+.form button {
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* FOOTER */
+.footer {
+    background: #1a1a1a;
+    color: white;
+    text-align: center;
+    padding: 20px;
 }
