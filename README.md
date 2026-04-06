@@ -25,4 +25,7 @@ Nessa atividade, você deverá montar a página inicial do projeto escolhido, a 
 
 ![inovaKernhhomepage](public/imagens/homepageInovaKern.png)
 
+## Print da versão MOBILE
+![mobile](public/imagens/print-mobile-1.png)
+![mobile](public/imagens/print-mobile-2.png)
 
