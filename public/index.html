@@ -3,110 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>InovaTech</title>
-    <link rel="stylesheet" href="style.css">
+    <title>InovaKern</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
+
 <body>
 
 <!-- HEADER -->
-<header class="header">
-    <h1 class="logo">InovaKern</h1>
+<header>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
 
-    <div class="search">
-        <input type="text" placeholder="Pesquisar...">
-        <button>🔍</button>
+    <a class="navbar-brand" href="#">InovaKern</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Sobre</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Equipe</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Projetos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Contato</a></li>
+      </ul>
     </div>
 
-    <nav class="nav">
-        <ul class="menu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Sobre</a></li>
-            <li><a href="#">Equipe</a></li>
-            <li><a href="#">Projetos</a></li>
-            <li><a href="#">Contato</a></li>
-        </ul>
-    </nav>
+  </div>
+</nav>
 </header>
 
 <main>
 
-<!-- HERO -->
-<section class="hero">
+<!-- HERO COM IMAGEM -->
+<section>
+    <img src="imagens/InovaKern.png" class="img-fluid w-100" alt="Banner do site">
 </section>
 
-<!-- SOBRE -->
-<section class="sobre">
-    <h2>Sobre a Startup</h2>
+<!-- TEXTO INTRODUTÓRIO -->
+<section class="container text-center my-5">
+    <h2>Bem-vindo à InovaKern</h2>
     <p>Somos uma startup focada no desenvolvimento de soluções digitais inovadoras, ajudando empresas a crescer no mundo digital.</p>
-
-    <button class="btn">Saiba mais</button>
+    <button class="btn btn-dark">Saiba mais</button>
 </section>
 
 <!-- EQUIPE -->
-<section class="equipe">
+<section class="container text-center my-5">
     <h2>Nossa Equipe</h2>
 
-    <div class="cards">
+    <div class="row">
 
-        <article class="card">
-            <img src="imagens/dev joao.png">
-            <h3>João Silva</h3>
-            <p>Desenvolvedor</p>
-        </article>
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="imagens/dev joao.png" class="card-img-top img-fluid" alt="João">
+                <div class="card-body">
+                    <h5>João Silva</h5>
+                    <p>Desenvolvedor</p>
+                </div>
+            </div>
+        </div>
 
-        <article class="card">
-            <img src="imagens/designer maria.png">
-            <h3>Maria Souza</h3>
-            <p>Designer</p>
-        </article>
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="imagens/designer maria.png" class="card-img-top img-fluid" alt="Maria">
+                <div class="card-body">
+                    <h5>Maria Souza</h5>
+                    <p>Designer</p>
+                </div>
+            </div>
+        </div>
 
-        <article class="card">
-            <img src="imagens/ceo lucas.png">
-            <h3>Carlos Lima</h3>
-            <p>CEO</p>
-        </article>
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="imagens/ceo lucas.png" class="card-img-top img-fluid" alt="Carlos">
+                <div class="card-body">
+                    <h5>Carlos Lima</h5>
+                    <p>CEO</p>
+                </div>
+            </div>
+        </div>
 
     </div>
 </section>
 
 <!-- PROJETOS -->
-<section class="projetos">
+<section class="container text-center my-5">
     <h2>Projetos</h2>
 
-    <div class="cards">
+    <div class="row justify-content-center">
 
-        <article class="card">
-            <img src="imagens/app financeiro.png">
-            <h3>App Financeiro</h3>
-            <p>Controle de gastos pessoais</p>
-        </article>
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="imagens/app financeiro.png" class="card-img-top img-fluid" alt="App Financeiro">
+                <div class="card-body">
+                    <h5>App Financeiro</h5>
+                    <p>Controle de gastos pessoais</p>
+                </div>
+            </div>
+        </div>
 
-        <article class="card">
-            <img src="imagens/plataforma ead.png">
-            <h3>Plataforma EAD</h3>
-            <p>Ensino online moderno</p>
-        </article>
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="imagens/plataforma ead.png" class="card-img-top img-fluid" alt="EAD">
+                <div class="card-body">
+                    <h5>Plataforma EAD</h5>
+                    <p>Ensino online moderno</p>
+                </div>
+            </div>
+        </div>
 
     </div>
 </section>
 
 <!-- CONTATO -->
-<section class="contato">
+<section class="container text-center my-5">
     <h2>Entre em Contato</h2>
 
-    <form class="form">
-        <input type="text" placeholder="Nome" required>
-        <input type="email" placeholder="Email" required>
-        <button type="submit">Enviar</button>
+    <form class="w-50 mx-auto">
+        <input class="form-control mb-3" type="text" placeholder="Nome" required>
+        <input class="form-control mb-3" type="email" placeholder="Email" required>
+        <button class="btn btn-dark">Enviar</button>
     </form>
 </section>
 
 </main>
 
 <!-- FOOTER -->
-<footer class="footer">
-    <p>© 2026 InovaTech - Todos os direitos reservados</p>
+<footer class="bg-dark text-white text-center p-3">
+    <p>© 2026 InovaKern - Todos os direitos reservados</p>
+
+    <div>
+        <a href="#" class="text-white me-3">Instagram</a>
+        <a href="#" class="text-white me-3">LinkedIn</a>
+        <a href="#" class="text-white">Facebook</a>
+    </div>
 </footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
